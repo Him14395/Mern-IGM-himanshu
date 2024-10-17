@@ -28,4 +28,4 @@ jobs:
     - run: npm run build --if-present
     - run: |
         touch .env
-        echo "${{secret.stage-env}}" > .env
+        echo "${{secrets.stage-env}}" > .env
