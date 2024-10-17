@@ -27,5 +27,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: |
-          touch .env
-          echo "${{secret.stage-env}}" > .env
+        touch .env
+        echo "${{secret.stage-env}}" > .env
